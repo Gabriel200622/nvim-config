@@ -7,7 +7,7 @@ opt.number = true -- shows absolute line number on cursor line (when relative nu
 -- tabs & indentation
 opt.tabstop = 2 -- 2 spaces for tabs (prettier default)
 opt.shiftwidth = 2 -- 2 spaces for indent width
-opt.expandtab = true -- expand tab to spaces
+opt.expandtab = true -- expand tab to spacesoptio
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- line wrapping
@@ -18,7 +18,7 @@ opt.ignorecase = true -- ignore case when searching
 opt.smartcase = true -- if you include mixed case in your search, assumes you want case-sensitive
 
 -- cursor line
-opt.cursorline = true -- highlight the current cursor line
+opt.cursorline = false -- highlight the current cursor line
 
 -- appearance
 
@@ -39,3 +39,19 @@ opt.splitright = true -- split vertical window to the right
 opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
+
+opt["guicursor"] = "" -- keep in box the cursor in insert mode
+
+opt.list = true
+opt.listchars = {
+	space = "⋅",
+	eol = "↴",
+	tab = "▎_",
+	trail = "•",
+	extends = "❯",
+	precedes = "❮",
+	nbsp = "",
+}
+
+-- z + o for folding code
+-- z + f to unfold code
