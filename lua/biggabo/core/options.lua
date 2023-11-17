@@ -40,8 +40,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
 
-opt["guicursor"] = "" -- keep in box the cursor in insert mode
-
 opt.list = true
 opt.listchars = {
 	space = "⋅",
